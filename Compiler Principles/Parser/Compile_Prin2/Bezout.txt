@@ -1,0 +1,43 @@
+(*--UTF-8--*)
+(*这是使用pl0语言编写的一个计算正整数a和b的Bezout等式的程序.*)  
+(*Created by 刘浩文 517021911065 on 2019/11/21.*)
+
+const test = 1, ntest = 0;
+var a, b, q, c, r, R, s, S, t, T; 
+
+procedure initial;	(*该过程将变量初始化.*)
+begin	
+	q := 0; c := 0;
+	r := a; R := b;
+	s := 1; S := 0;
+	t := 0; T := 1;
+end;
+
+procedure LOOP;	(*该过程计算出a与b的最大公因数并保存在r中*)
+begin
+	while R <> 0 do
+	begin
+		c := S;
+		S := -q * S + s;
+		s := c;
+		c := T;
+		T := -q * T + t;
+		t := c;
+		q := r / R;
+		c := R;
+		R := -q * R + r;
+		r := c;
+	end
+end;
+
+begin			(*主函数，输入a,b的数值得到其Bezout等式.*)
+	a := 1847;
+	b := 9832;
+	call initial;
+	q := r / R;
+	c := R;
+	R := -q * R + r;
+	r := c;
+	call LOOP;
+end
+.
