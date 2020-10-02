@@ -32,7 +32,8 @@ This folder contains some of my course projects. Folder ***Assigments*** contain
 
     - project2_3: 2x1 and 4x1 MUX
 
-    - project2_4: Combinational circuit in Level *Structural, UDP, Dataflow and Behvioral or algorithmic*![Screen Shot 2020-10-02 at 11.30.25 AM](README.assets/Screen Shot 2020-10-02 at 11.30.25 AM.png)
+    - project2_4: Combinational circuit in Level *Structural, UDP, Dataflow and Behvioral or algorithmic*
+    ![Screen Shot 2020-10-02 at 11.30.25 AM](README.assets/Screen Shot 2020-10-02 at 11.30.25 AM.png)
 
     - project2_5: Combinational circuit(Dataflow)
 
@@ -47,7 +48,8 @@ This folder contains some of my course projects. Folder ***Assigments*** contain
       P(x)=x^{26}+x^8+x^7+x+1
       $$
 
-    - project2_A: *Filter(single module)*![Screen Shot 2020-10-02 at 11.39.26 AM](README.assets/Screen Shot 2020-10-02 at 11.39.26 AM.png)
+    - project2_A: *Filter(single module)*
+    ![Screen Shot 2020-10-02 at 11.39.26 AM](README.assets/Screen Shot 2020-10-02 at 11.39.26 AM.png)
 
     - project2_B: 8-bit Bidirectional cycle counter(0 -> 1 -> 2 -> … -> 255 -> 254 -> 253 -> … -> 1 -> 0)
 
@@ -72,6 +74,8 @@ This folder contains some of my course projects. Folder ***Assigments*** contain
 
     - project2_G: ***Sequence Detector***(`10101010`)
 
-      - Mealy machine:![Screen Shot 2020-10-02 at 11.58.51 AM](README.assets/Screen Shot 2020-10-02 at 11.58.51 AM.png)
-      - Moore machine:![Screen Shot 2020-10-02 at 11.59.18 AM](README.assets/Screen Shot 2020-10-02 at 11.59.18 AM.png)
+      - Mealy machine:
+      ![Screen Shot 2020-10-02 at 11.58.51 AM](README.assets/Screen Shot 2020-10-02 at 11.58.51 AM.png)
+      - Moore machine:
+      ![Screen Shot 2020-10-02 at 11.59.18 AM](README.assets/Screen Shot 2020-10-02 at 11.59.18 AM.png)
 
