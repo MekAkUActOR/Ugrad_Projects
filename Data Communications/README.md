@@ -31,7 +31,7 @@ This folder contains some of my course projects.
 
   - lab2
 
-     *      ​		192.168.10.0                       192.168.50.0
+     *      	192.168.10.0                       192.168.50.0
      n0 ------------------------ n1-------------------------------- n2
              		point-to-point               point-to-point
               		5Mbps, 2ms                    1Mbps, 2ms 
@@ -43,15 +43,15 @@ This folder contains some of my course projects.
       \*  \*  \*
 
       |  |  |
-      n3 n4 n5  p2p (100Mbps, 2ms)      p2p(100Mbps, 2ms)
+      n3 n4 n5    p2p (100Mbps, 2ms)          p2p(100Mbps, 2ms)
           A (n0)------------------------B(n1)---------------------------C(n2)
          (AP)            10.1.1.0                    1 0.1.2.0          (AP)
                                      	         		                    n6  n7  n8
                                        	             		              |   |   |
 
-      ​																		\*   \*   \*  
+      																		\*   \*   \*  
 
-      ​                                       	      	 		           Wifi 10.1.4.0
+                                             	      	 		           Wifi 10.1.4.0
 
   - lab4
 
