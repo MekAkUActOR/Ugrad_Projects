@@ -36,7 +36,7 @@ void g_etch(void) //由于笔者的Xcode的C环境的curses.h文件中已有getc
 		while (!feof(infile) && (ch = getc(infile))!='\n')
 		{
 			printf("%c", ch);
-            line[++ll] = ch;            //读取该行下一个符号存入数组，计算出该行源码长度保存在变量 ll 中
+            		line[++ll] = ch;            //读取该行下一个符号存入数组，计算出该行源码长度保存在变量 ll 中
 
 		}                               // while 这里读入了源代码符号串中的一行字符串
 		printf("\n");
@@ -52,12 +52,11 @@ void getsym(void)
 {
 	int i, k;
 	char a[MAXIDLEN + 1];
-
 	while (ch == ' ' || ch=='\t')
-    {
-        g_etch();
-        if (cc >= ll) printf("\n");     //该行是增加用来使输出更整齐美观，防止行末空格干扰换行
-    }
+	    {
+		g_etch();
+		if (cc >= ll) printf("\n");     //该行是增加用来使输出更整齐美观，防止行末空格干扰换行
+	    }
 
 	if (isalpha(ch))//isalpha是一种函数：判断字符ch是否为英文字母，若为英文字母，返回非0（小写字母为2，大写字母为1）。若不是字母，返回0。这里判断首字母是否为英文字母。
 	{ // symbol is a reserved word or an identifier.
@@ -65,7 +64,7 @@ void getsym(void)
 		do
 		{
 			if (k < MAXIDLEN)
-				a[k++] = ch;
+			a[k++] = ch;
 			g_etch();//读入一个可能的标识符或保留字
 		}
 		while (isalpha(ch) || isdigit(ch));//直到读入一个空格或换行，此时a[k]=空格或换行
@@ -99,16 +98,13 @@ void getsym(void)
 		g_etch();
 		if (ch == '=')
 		{
-            sym = SYM_BECOMES;
-            C_all++;           // :=
-            C_becomes++;
-			
-			g_etch();
+		    sym = SYM_BECOMES;
+		    C_all++;           // :=
+		    C_becomes++;
+		    g_etch();
 		}
 		else
-		{
-			sym = SYM_NULL;       // illegal?
-		}
+		    sym = SYM_NULL;       // illegal?
 	}
 	else if (ch == '>')
 	{
@@ -120,19 +116,19 @@ void getsym(void)
 		}
 		else
 		{
-            sym = SYM_GTR;
-            C_all++;
-            C_gtr++;// >
+		    sym = SYM_GTR;
+		    C_all++;
+		    C_gtr++;// >
 			
 		}
 	}
 	else if (ch == '<')
 	{
-        g_etch();
-        if (ch == '=')
+		g_etch();
+		if (ch == '=')
         {
-            sym = SYM_LEQ;
-            g_etch();
+	    sym = SYM_LEQ;
+	    g_etch();
         }
         else if(ch == '>')
         {
@@ -186,9 +182,7 @@ void getsym(void)
 		{
 			sym = ssym[i];
 			if (sym != SYM_PERIOD)
-			{
 				g_etch();
-			}
 		}
 		else
 		{
@@ -216,10 +210,10 @@ int main ()
 	while(ch != '.')
 	{   
 		getsym();  
-	    /* Please output types of words in every line */
-        printf("%d ",sym);      //直接将 sym 输出即可
-        if (cc >= ll) printf("\n");
-    }
+		    /* Please output types of words in every line */
+		printf("%d ",sym);      //直接将 sym 输出即可
+		if (cc >= ll) printf("\n");
+    	}
 
 
 	if (sym != SYM_PERIOD)
