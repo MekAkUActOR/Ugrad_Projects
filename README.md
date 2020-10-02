@@ -1,5 +1,5 @@
 # Ugrad_Projects
-Course Projects during my Undergraduate years in SJTU
+Some of my Course Projects during my Undergraduate years in SJTU
 
 ***
 - Compiler Principles: C
