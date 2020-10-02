@@ -1,0 +1,36 @@
+$date
+	Fri Nov 29 16:48:17 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module compare1b_tb $end
+$var wire 1 ! p_y $end
+$var reg 1 " p_a $end
+$var reg 1 # p_b $end
+$scope module m_cmp1b $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 ! y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0#
+0"
+1!
+$end
+#1000
+0!
+1#
+#2000
+0#
+1"
+#3000
+1!
+1#
+#4000

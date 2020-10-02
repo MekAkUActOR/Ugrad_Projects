@@ -1,0 +1,32 @@
+$date
+	Thu Dec 12 16:34:35 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module wavegen $end
+$var reg 1 ! wave $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+$end
+#20
+1!
+#30
+0!
+#120
+1!
+#220
+0!
+#240
+1!
+#270
+0!
+#320
+1!
+#350

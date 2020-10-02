@@ -1,0 +1,83 @@
+#! /usr/local/Cellar/icarus-verilog/10.3/bin/vvp
+:ivl_version "10.3 (stable)" "(v10_3)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7ff3cc6002a0 .scope module, "tb_dec_counter" "tb_dec_counter" 2 6;
+ .timescale -8 -9;
+v0x7ff3cc700960_0 .var "p_clk", 0 0;
+v0x7ff3cc700a20_0 .net "p_counter", 3 0, v0x7ff3cc7007d0_0;  1 drivers
+v0x7ff3cc700ae0_0 .var "p_reset", 0 0;
+S_0x7ff3cc600410 .scope module, "m_decc" "dec_counter" 2 12, 3 5 0, S_0x7ff3cc6002a0;
+ .timescale -8 -9;
+    .port_info 0 /OUTPUT 4 "counter"
+    .port_info 1 /INPUT 1 "clk"
+    .port_info 2 /INPUT 1 "reset"
+v0x7ff3cc600650_0 .net "clk", 0 0, v0x7ff3cc700960_0;  1 drivers
+v0x7ff3cc7007d0_0 .var "counter", 3 0;
+v0x7ff3cc700890_0 .net "reset", 0 0, v0x7ff3cc700ae0_0;  1 drivers
+E_0x7ff3cc600610 .event posedge, v0x7ff3cc600650_0;
+    .scope S_0x7ff3cc600410;
+T_0 ;
+    %wait E_0x7ff3cc600610;
+    %load/vec4 v0x7ff3cc700890_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v0x7ff3cc7007d0_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0x7ff3cc7007d0_0;
+    %cmpi/e 9, 0, 4;
+    %jmp/0xz  T_0.2, 4;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v0x7ff3cc7007d0_0, 0;
+    %jmp T_0.3;
+T_0.2 ;
+    %load/vec4 v0x7ff3cc7007d0_0;
+    %addi 1, 0, 4;
+    %store/vec4 v0x7ff3cc7007d0_0, 0, 4;
+T_0.3 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x7ff3cc6002a0;
+T_1 ;
+    %vpi_call 2 20 "$dumpfile", "dec_counter.vcd" {0 0 0};
+    %vpi_call 2 21 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7ff3cc6002a0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7ff3cc700960_0, 0, 1;
+T_1.0 ;
+    %delay 100, 0;
+    %load/vec4 v0x7ff3cc700960_0;
+    %inv;
+    %store/vec4 v0x7ff3cc700960_0, 0, 1;
+    %jmp T_1.0;
+    %end;
+    .thread T_1;
+    .scope S_0x7ff3cc6002a0;
+T_2 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7ff3cc700ae0_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7ff3cc700ae0_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 35 "$stop" {0 0 0};
+    %end;
+    .thread T_2;
+    .scope S_0x7ff3cc6002a0;
+T_3 ;
+    %vpi_call 2 41 "$monitor", "At time %tns, reset = %b, counter = %d.", $time, v0x7ff3cc700ae0_0, v0x7ff3cc700a20_0 {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_dec_counter.v";
+    "./dec_counter.v";

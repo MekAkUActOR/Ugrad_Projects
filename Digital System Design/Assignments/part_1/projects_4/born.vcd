@@ -1,0 +1,110 @@
+$date
+	Sat Nov 30 19:21:45 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module born_test_tb $end
+$var wire 4 ! p_c2 [3:0] $end
+$var wire 4 " p_c1 [3:0] $end
+$var wire 4 # p_b2 [3:0] $end
+$var wire 4 $ p_b1 [3:0] $end
+$var reg 4 % p_a [3:0] $end
+$var reg 1 & p_clk $end
+$scope module m_blk $end
+$var wire 4 ' a [3:0] $end
+$var wire 1 & clk $end
+$var reg 4 ( b [3:0] $end
+$var reg 4 ) c [3:0] $end
+$upscope $end
+$scope module m_nblk $end
+$var wire 4 * a [3:0] $end
+$var wire 1 & clk $end
+$var reg 4 + b [3:0] $end
+$var reg 4 , c [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx ,
+bx +
+b11 *
+bx )
+bx (
+b11 '
+0&
+b11 %
+bx $
+bx #
+bx "
+bx !
+$end
+#50
+b11 #
+b11 +
+b11 "
+b11 )
+b11 $
+b11 (
+1&
+#100
+0&
+b111 %
+b111 '
+b111 *
+#150
+b11 !
+b11 ,
+b111 #
+b111 +
+b111 $
+b111 (
+1&
+#200
+0&
+b1111 %
+b1111 '
+b1111 *
+#250
+b111 !
+b111 ,
+b1111 #
+b1111 +
+b1111 "
+b1111 )
+b1111 $
+b1111 (
+1&
+#300
+0&
+b1010 %
+b1010 '
+b1010 *
+#350
+b1111 !
+b1111 ,
+b1010 #
+b1010 +
+b1010 $
+b1010 (
+1&
+#400
+0&
+b10 %
+b10 '
+b10 *
+#450
+b1010 !
+b1010 ,
+b10 #
+b10 +
+b10 "
+b10 )
+b10 $
+b10 (
+1&
+#500

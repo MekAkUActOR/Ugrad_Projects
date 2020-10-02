@@ -1,0 +1,73 @@
+init coremap, first addr: 0x1006028a0
+p
+flag->m_addr = 0x1006028a0  flag->m_size = 1000
+m 600
+Success: lmalloc size: 600, addr:0x1006028a0
+p
+flag->m_addr = 0x100602af8  flag->m_size = 400
+m 100
+Success: lmalloc size: 100, addr:0x100602af8
+p
+flag->m_addr = 0x100602b5c  flag->m_size = 300
+f 200 0
+Success: lfree mem size=200, addr=0x1006028a0
+p
+flag->m_addr = 0x1006028a0  flag->m_size = 200
+flag->m_addr = 0x100602b5c  flag->m_size = 300
+f 100 300
+Success: lfree mem size=100, addr=0x1006029cc
+p
+flag->m_addr = 0x1006028a0  flag->m_size = 200
+flag->m_addr = 0x1006029cc  flag->m_size = 100
+flag->m_addr = 0x100602b5c  flag->m_size = 300
+f 50 200
+Success: lfree mem size=50, addr=0x100602968
+p
+flag->m_addr = 0x1006028a0  flag->m_size = 250
+flag->m_addr = 0x1006029cc  flag->m_size = 100
+flag->m_addr = 0x100602b5c  flag->m_size = 300
+f 50 250
+Success: lfree mem size=50, addr=0x10060299a
+p
+flag->m_addr = 0x1006028a0  flag->m_size = 400
+flag->m_addr = 0x100602b5c  flag->m_size = 300
+f 100 600
+Success: lfree mem size=100, addr=0x100602af8
+p
+flag->m_addr = 0x1006028a0  flag->m_size = 400
+flag->m_addr = 0x100602af8  flag->m_size = 400
+f 50 500
+Success: lfree mem size=50, addr=0x100602a94
+p
+flag->m_addr = 0x1006028a0  flag->m_size = 400
+flag->m_addr = 0x100602a94  flag->m_size = 50
+flag->m_addr = 0x100602af8  flag->m_size = 400
+m 50
+Success: lmalloc size: 50, addr:0x100602af8
+p
+flag->m_addr = 0x1006028a0  flag->m_size = 400
+flag->m_addr = 0x100602a94  flag->m_size = 50
+flag->m_addr = 0x100602b2a  flag->m_size = 350
+m 50
+Success: lmalloc size: 50, addr:0x1006028a0
+p
+flag->m_addr = 0x1006028d2  flag->m_size = 350
+flag->m_addr = 0x100602a94  flag->m_size = 50
+flag->m_addr = 0x100602b2a  flag->m_size = 350
+m 50
+Success: lmalloc size: 50, addr:0x100602a94
+p
+flag->m_addr = 0x1006028d2  flag->m_size = 350
+flag->m_addr = 0x100602b2a  flag->m_size = 350
+m 50
+Success: lmalloc size: 50, addr:0x100602b2a
+p
+flag->m_addr = 0x1006028d2  flag->m_size = 350
+flag->m_addr = 0x100602b5c  flag->m_size = 300
+m 50
+Success: lmalloc size: 50, addr:0x1006028d2
+p
+flag->m_addr = 0x100602904  flag->m_size = 300
+flag->m_addr = 0x100602b5c  flag->m_size = 300
+q
+Program ended with exit code: 0

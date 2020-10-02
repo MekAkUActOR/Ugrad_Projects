@@ -1,0 +1,54 @@
+#! /usr/local/Cellar/icarus-verilog/10.3/bin/vvp
+:ivl_version "10.3 (stable)" "(v10_3)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7f9b69e00f40 .scope module, "tb_mux2x1" "tb_mux2x1" 2 6;
+ .timescale -9 -9;
+v0x7f9b69e11580_0 .var "p_din", 1 0;
+RS_0x10b98f098 .resolv tri, L_0x7f9b69e117b0, L_0x7f9b69e119e0;
+v0x7f9b69e11630_0 .net8 "p_dout", 0 0, RS_0x10b98f098;  2 drivers, strength-aware
+v0x7f9b69e116e0_0 .var "p_sel", 0 0;
+S_0x7f9b69e010a0 .scope module, "m_m2x1" "mux2x1" 2 13, 3 6 0, S_0x7f9b69e00f40;
+ .timescale -9 -9;
+    .port_info 0 /OUTPUT 1 "dout"
+    .port_info 1 /INPUT 1 "sel"
+    .port_info 2 /INPUT 2 "din"
+L_0x7f9b69e117b0 .functor BUFIF0 1, L_0x7f9b69e118c0, v0x7f9b69e116e0_0, C4<0>, C4<0>;
+L_0x7f9b69e119e0 .functor BUFIF1 1, L_0x7f9b69e11a50, v0x7f9b69e116e0_0, C4<0>, C4<0>;
+v0x7f9b69e01250_0 .net *"_s1", 0 0, L_0x7f9b69e118c0;  1 drivers
+v0x7f9b69e11260_0 .net *"_s3", 0 0, L_0x7f9b69e11a50;  1 drivers
+v0x7f9b69e11310_0 .net "din", 1 0, v0x7f9b69e11580_0;  1 drivers
+v0x7f9b69e113d0_0 .net8 "dout", 0 0, RS_0x10b98f098;  alias, 2 drivers, strength-aware
+v0x7f9b69e11470_0 .net "sel", 0 0, v0x7f9b69e116e0_0;  1 drivers
+L_0x7f9b69e118c0 .part v0x7f9b69e11580_0, 0, 1;
+L_0x7f9b69e11a50 .part v0x7f9b69e11580_0, 1, 1;
+    .scope S_0x7f9b69e00f40;
+T_0 ;
+    %vpi_call 2 19 "$dumpfile", "mux2x1.vcd" {0 0 0};
+    %vpi_call 2 20 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7f9b69e00f40 {0 0 0};
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v0x7f9b69e11580_0, 0, 2;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f9b69e116e0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f9b69e116e0_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 26 "$stop" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x7f9b69e00f40;
+T_1 ;
+    %vpi_call 2 31 "$monitor", "in0 = %b, in1 = %b, s = %b, out = %b.", &PV<v0x7f9b69e11580_0, 0, 1>, &PV<v0x7f9b69e11580_0, 1, 1>, v0x7f9b69e116e0_0, v0x7f9b69e11630_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_mux2x1.v";
+    "./mux2x1.v";

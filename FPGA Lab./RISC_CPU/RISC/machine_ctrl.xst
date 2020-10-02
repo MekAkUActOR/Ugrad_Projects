@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Public/FPGA/RISC/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Public/FPGA/RISC/xst"
+elaborate
+-ifn machine_ctrl.prj
+-ifmt mixed

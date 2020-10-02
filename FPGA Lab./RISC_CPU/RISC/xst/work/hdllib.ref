@@ -1,0 +1,10 @@
+MO machine NULL machine.v vlg31/machine.bin 1593186149
+MO clock_generator NULL clock_generator.v vlg4A/clock__generator.bin 1593186149
+MO CPU NULL CPU.v vlg70/_c_p_u.bin 1593186149
+MO address_mux NULL address_mux.v vlg23/address__mux.bin 1593186149
+MO IR NULL IR.v vlg3F/_i_r.bin 1593186149
+MO PC NULL PC.v vlg53/_p_c.bin 1593186149
+MO machine_ctrl NULL machine_ctrl.v vlg65/machine__ctrl.bin 1593186149
+MO ACC NULL ACC.v vlg6B/_a_c_c.bin 1593186149
+MO bus_controller NULL bus_controller.v vlg11/bus__controller.bin 1593186149
+MO ALU NULL ALU.v vlg2A/_a_l_u.bin 1593186149

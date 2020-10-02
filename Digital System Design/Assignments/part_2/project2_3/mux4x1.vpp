@@ -1,0 +1,133 @@
+#! /usr/local/Cellar/icarus-verilog/10.3/bin/vvp
+:ivl_version "10.3 (stable)" "(v10_3)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7fd5075091c0 .scope module, "tb_mux4x1" "tb_mux4x1" 2 6;
+ .timescale -9 -9;
+v0x7fd50751e320_0 .var "p_din", 3 0;
+RS_0x10a991398 .resolv tri, L_0x7fd50751f5c0, L_0x7fd50751f6d0;
+v0x7fd50751e3b0_0 .net8 "p_dout", 0 0, RS_0x10a991398;  2 drivers, strength-aware
+v0x7fd50751e480_0 .var "p_sel", 1 0;
+S_0x7fd50750a4a0 .scope module, "m_m4x1" "mux4x1" 2 13, 3 6 0, S_0x7fd5075091c0;
+ .timescale -9 -9;
+    .port_info 0 /OUTPUT 1 "dout"
+    .port_info 1 /INPUT 2 "sel"
+    .port_info 2 /INPUT 4 "din"
+v0x7fd50751dc10_0 .net *"_s1", 0 0, L_0x7fd50751e510;  1 drivers
+v0x7fd50751dcd0_0 .net *"_s3", 0 0, L_0x7fd50751e610;  1 drivers
+v0x7fd50751dd70_0 .net *"_s5", 0 0, L_0x7fd50751e6b0;  1 drivers
+v0x7fd50751de20_0 .net *"_s7", 0 0, L_0x7fd50751e7f0;  1 drivers
+v0x7fd50751ded0_0 .net "din", 3 0, v0x7fd50751e320_0;  1 drivers
+v0x7fd50751dfc0_0 .net "din1", 3 0, L_0x7fd50751e890;  1 drivers
+v0x7fd50751e070_0 .net "dm", 1 0, L_0x7fd50751f350;  1 drivers
+v0x7fd50751e110_0 .net8 "dout", 0 0, RS_0x10a991398;  alias, 2 drivers, strength-aware
+v0x7fd50751e1c0_0 .net "sel", 1 0, v0x7fd50751e480_0;  1 drivers
+L_0x7fd50751e510 .part v0x7fd50751e320_0, 3, 1;
+L_0x7fd50751e610 .part v0x7fd50751e320_0, 1, 1;
+L_0x7fd50751e6b0 .part v0x7fd50751e320_0, 2, 1;
+L_0x7fd50751e7f0 .part v0x7fd50751e320_0, 0, 1;
+L_0x7fd50751e890 .concat [ 1 1 1 1], L_0x7fd50751e7f0, L_0x7fd50751e6b0, L_0x7fd50751e610, L_0x7fd50751e510;
+L_0x7fd50751edf0 .part v0x7fd50751e480_0, 1, 1;
+L_0x7fd50751eed0 .part L_0x7fd50751e890, 0, 2;
+RS_0x10a991098 .resolv tri, L_0x7fd50751ea90, L_0x7fd50751ebe0;
+RS_0x10a991218 .resolv tri, L_0x7fd50751eff0, L_0x7fd50751f140;
+L_0x7fd50751f350 .concat8 [ 1 1 0 0], RS_0x10a991098, RS_0x10a991218;
+L_0x7fd50751f430 .part v0x7fd50751e480_0, 1, 1;
+L_0x7fd50751f520 .part L_0x7fd50751e890, 2, 2;
+L_0x7fd50751f920 .part v0x7fd50751e480_0, 0, 1;
+S_0x7fd50750c690 .scope module, "m1" "mux2x1" 3 16, 4 6 0, S_0x7fd50750a4a0;
+ .timescale -9 -9;
+    .port_info 0 /OUTPUT 1 "dout"
+    .port_info 1 /INPUT 1 "sel"
+    .port_info 2 /INPUT 2 "din"
+L_0x7fd50751ea90 .functor BUFIF0 1, L_0x7fd50751eb00, L_0x7fd50751edf0, C4<0>, C4<0>;
+L_0x7fd50751ebe0 .functor BUFIF1 1, L_0x7fd50751ecd0, L_0x7fd50751edf0, C4<0>, C4<0>;
+v0x7fd50750b300_0 .net *"_s1", 0 0, L_0x7fd50751eb00;  1 drivers
+v0x7fd50751cd20_0 .net *"_s3", 0 0, L_0x7fd50751ecd0;  1 drivers
+v0x7fd50751cdd0_0 .net "din", 1 0, L_0x7fd50751eed0;  1 drivers
+v0x7fd50751ce90_0 .net8 "dout", 0 0, RS_0x10a991098;  2 drivers, strength-aware
+v0x7fd50751cf30_0 .net "sel", 0 0, L_0x7fd50751edf0;  1 drivers
+L_0x7fd50751eb00 .part L_0x7fd50751eed0, 0, 1;
+L_0x7fd50751ecd0 .part L_0x7fd50751eed0, 1, 1;
+S_0x7fd50751d040 .scope module, "m2" "mux2x1" 3 20, 4 6 0, S_0x7fd50750a4a0;
+ .timescale -9 -9;
+    .port_info 0 /OUTPUT 1 "dout"
+    .port_info 1 /INPUT 1 "sel"
+    .port_info 2 /INPUT 2 "din"
+L_0x7fd50751eff0 .functor BUFIF0 1, L_0x7fd50751f060, L_0x7fd50751f430, C4<0>, C4<0>;
+L_0x7fd50751f140 .functor BUFIF1 1, L_0x7fd50751f230, L_0x7fd50751f430, C4<0>, C4<0>;
+v0x7fd50751d250_0 .net *"_s1", 0 0, L_0x7fd50751f060;  1 drivers
+v0x7fd50751d300_0 .net *"_s3", 0 0, L_0x7fd50751f230;  1 drivers
+v0x7fd50751d3b0_0 .net "din", 1 0, L_0x7fd50751f520;  1 drivers
+v0x7fd50751d470_0 .net8 "dout", 0 0, RS_0x10a991218;  2 drivers, strength-aware
+v0x7fd50751d510_0 .net "sel", 0 0, L_0x7fd50751f430;  1 drivers
+L_0x7fd50751f060 .part L_0x7fd50751f520, 0, 1;
+L_0x7fd50751f230 .part L_0x7fd50751f520, 1, 1;
+S_0x7fd50751d620 .scope module, "m3" "mux2x1" 3 24, 4 6 0, S_0x7fd50750a4a0;
+ .timescale -9 -9;
+    .port_info 0 /OUTPUT 1 "dout"
+    .port_info 1 /INPUT 1 "sel"
+    .port_info 2 /INPUT 2 "din"
+L_0x7fd50751f5c0 .functor BUFIF0 1, L_0x7fd50751f630, L_0x7fd50751f920, C4<0>, C4<0>;
+L_0x7fd50751f6d0 .functor BUFIF1 1, L_0x7fd50751f7c0, L_0x7fd50751f920, C4<0>, C4<0>;
+v0x7fd50751d840_0 .net *"_s1", 0 0, L_0x7fd50751f630;  1 drivers
+v0x7fd50751d8f0_0 .net *"_s3", 0 0, L_0x7fd50751f7c0;  1 drivers
+v0x7fd50751d9a0_0 .net "din", 1 0, L_0x7fd50751f350;  alias, 1 drivers
+v0x7fd50751da60_0 .net8 "dout", 0 0, RS_0x10a991398;  alias, 2 drivers, strength-aware
+v0x7fd50751db00_0 .net "sel", 0 0, L_0x7fd50751f920;  1 drivers
+L_0x7fd50751f630 .part L_0x7fd50751f350, 0, 1;
+L_0x7fd50751f7c0 .part L_0x7fd50751f350, 1, 1;
+    .scope S_0x7fd5075091c0;
+T_0 ;
+    %vpi_call 2 19 "$dumpfile", "mux4x1.vcd" {0 0 0};
+    %vpi_call 2 20 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fd5075091c0 {0 0 0};
+    %pushi/vec4 1, 0, 4;
+    %store/vec4 v0x7fd50751e320_0, 0, 4;
+    %pushi/vec4 4, 0, 32;
+T_0.0 %dup/vec4;
+    %pushi/vec4 0, 0, 32;
+    %cmp/s;
+    %jmp/1xz T_0.1, 5;
+    %jmp/1 T_0.1, 4;
+    %pushi/vec4 1, 0, 32;
+    %sub;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0x7fd50751e480_0, 0, 2;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0x7fd50751e480_0, 0, 2;
+    %delay 10, 0;
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v0x7fd50751e480_0, 0, 2;
+    %delay 10, 0;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v0x7fd50751e480_0, 0, 2;
+    %delay 10, 0;
+    %load/vec4 v0x7fd50751e320_0;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %shiftl 4;
+    %store/vec4 v0x7fd50751e320_0, 0, 4;
+    %jmp T_0.0;
+T_0.1 ;
+    %pop/vec4 1;
+    %delay 10, 0;
+    %vpi_call 2 32 "$stop" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x7fd5075091c0;
+T_1 ;
+    %vpi_call 2 37 "$monitor", "in = %b, s = %b, out = %b.", v0x7fd50751e320_0, v0x7fd50751e480_0, v0x7fd50751e3b0_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "tb_mux4x1.v";
+    "./mux4x1.v";
+    "./mux2x1.v";

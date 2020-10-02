@@ -1,0 +1,74 @@
+init coremap, first addr: 0x100545ce0
+p
+flag->m_addr = 0x100545ce0  flag->m_size = 1000
+m 1200
+Error: There is no appropriate memory to be allocated for the size!
+m 0	
+Error: Wrong size!
+m -100
+Error: Wrong size!
+p	
+flag->m_addr = 0x100545ce0  flag->m_size = 1000
+m 800
+Success: lmalloc size: 800, addr:0x100545ce0
+f 200 0
+Success: lfree mem size=200, addr=0x100545ce0
+f 200 400
+Success: lfree mem size=200, addr=0x100545e70
+p	
+flag->m_addr = 0x100545ce0  flag->m_size = 200
+flag->m_addr = 0x100545e70  flag->m_size = 200
+flag->m_addr = 0x100546000  flag->m_size = 200
+m 300
+Error: There is no appropriate memory to be allocated for the size!
+p
+flag->m_addr = 0x100545ce0  flag->m_size = 200
+flag->m_addr = 0x100545e70  flag->m_size = 200
+flag->m_addr = 0x100546000  flag->m_size = 200
+f 0 100
+Error: Wrong size!
+f -50 100
+Error: Wrong size!
+f 100 -100
+Error: Wrong address!
+f 100 1200
+Error: Wrong address!
+p
+flag->m_addr = 0x100545ce0  flag->m_size = 200
+flag->m_addr = 0x100545e70  flag->m_size = 200
+flag->m_addr = 0x100546000  flag->m_size = 200
+f 100 50
+Error: Already released!
+p
+flag->m_addr = 0x100545ce0  flag->m_size = 200
+flag->m_addr = 0x100545e70  flag->m_size = 200
+flag->m_addr = 0x100546000  flag->m_size = 200
+f 200 50
+Warning: Release area out of bounds!
+Success: lfree mem size=200, addr=0x100545d12
+p
+flag->m_addr = 0x100545ce0  flag->m_size = 250
+flag->m_addr = 0x100545e70  flag->m_size = 200
+flag->m_addr = 0x100546000  flag->m_size = 200
+f 200 350
+Warning: Release area out of bounds!
+Success: lfree mem size=200, addr=0x100545e3e
+p
+flag->m_addr = 0x100545ce0  flag->m_size = 250
+flag->m_addr = 0x100545e3e  flag->m_size = 250
+flag->m_addr = 0x100546000  flag->m_size = 200
+f 400 300
+Error: Release area out of bounds!
+p
+flag->m_addr = 0x100545ce0  flag->m_size = 250
+flag->m_addr = 0x100545e3e  flag->m_size = 250
+flag->m_addr = 0x100546000  flag->m_size = 200
+f 200 200
+Warning: Release area out of bounds!
+Warning: Release area out of bounds!
+Success: lfree mem size=200, addr=0x100545da8
+p
+flag->m_addr = 0x100545ce0  flag->m_size = 600
+flag->m_addr = 0x100546000  flag->m_size = 200
+q
+Program ended with exit code: 0

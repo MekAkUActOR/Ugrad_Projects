@@ -1,0 +1,65 @@
+$date
+	Sat Nov 30 20:45:53 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module select8_tb $end
+$var wire 4 ! p_y [3:0] $end
+$var reg 32 " p_datain [31:0] $end
+$var reg 3 # p_sel [2:0] $end
+$scope module m_sel8 $end
+$var wire 32 $ datain [31:0] $end
+$var wire 3 % sel [2:0] $end
+$var reg 4 & y [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 &
+b0 %
+b1110110010101000011001000010000 $
+b0 #
+b1110110010101000011001000010000 "
+b0 !
+$end
+#100
+b1 !
+b1 &
+b1 #
+b1 %
+#200
+b10 !
+b10 &
+b10 #
+b10 %
+#300
+b11 !
+b11 &
+b11 #
+b11 %
+#400
+b100 !
+b100 &
+b100 #
+b100 %
+#500
+b101 !
+b101 &
+b101 #
+b101 %
+#600
+b110 !
+b110 &
+b110 #
+b110 %
+#700
+b111 !
+b111 &
+b111 #
+b111 %
+#800

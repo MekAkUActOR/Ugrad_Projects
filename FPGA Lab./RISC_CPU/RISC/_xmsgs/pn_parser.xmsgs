@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Public/FPGA/RISC/tb_analys.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Public/FPGA/RISC/tb_analys.v</arg>&quot; Line <arg fmt="%d" index="2">3</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Public/FPGA/RISC_CPU/ACC.v&apos; in file &quot;C:/Users/Public/FPGA/RISC/tb_analys.v&quot; line 3
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Public/FPGA/RISC/tb_analys.v</arg>&quot; Line <arg fmt="%d" index="2">4</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Public/FPGA/RISC_CPU/address_mux.v&apos; in file &quot;C:/Users/Public/FPGA/RISC/tb_analys.v&quot; line 4
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Public/FPGA/RISC/tb_analys.v</arg>&quot; Line <arg fmt="%d" index="2">5</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Public/FPGA/RISC_CPU/ALU.v&apos; in file &quot;C:/Users/Public/FPGA/RISC/tb_analys.v&quot; line 5
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Public/FPGA/RISC/tb_analys.v</arg>&quot; Line <arg fmt="%d" index="2">6</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Public/FPGA/RISC_CPU/bus_controller.v&apos; in file &quot;C:/Users/Public/FPGA/RISC/tb_analys.v&quot; line 6
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Public/FPGA/RISC/tb_analys.v</arg>&quot; Line <arg fmt="%d" index="2">7</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Public/FPGA/RISC_CPU/clock_generator.v&apos; in file &quot;C:/Users/Public/FPGA/RISC/tb_analys.v&quot; line 7
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Public/FPGA/RISC/tb_analys.v</arg>&quot; Line <arg fmt="%d" index="2">8</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Public/FPGA/RISC_CPU/IR.v&apos; in file &quot;C:/Users/Public/FPGA/RISC/tb_analys.v&quot; line 8
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Public/FPGA/RISC/tb_analys.v</arg>&quot; Line <arg fmt="%d" index="2">9</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Public/FPGA/RISC_CPU/machine.v&apos; in file &quot;C:/Users/Public/FPGA/RISC/tb_analys.v&quot; line 9
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Public/FPGA/RISC/tb_analys.v</arg>&quot; Line <arg fmt="%d" index="2">10</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Public/FPGA/RISC_CPU/machine_ctrl.v&apos; in file &quot;C:/Users/Public/FPGA/RISC/tb_analys.v&quot; line 10
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Public/FPGA/RISC/tb_analys.v</arg>&quot; Line <arg fmt="%d" index="2">11</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Public/FPGA/RISC_CPU/PC.v&apos; in file &quot;C:/Users/Public/FPGA/RISC/tb_analys.v&quot; line 11
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Public/FPGA/RISC/tb_analys.v</arg>&quot; Line <arg fmt="%d" index="2">12</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Public/FPGA/RISC_CPU/address_decoder.v&apos; in file &quot;C:/Users/Public/FPGA/RISC/tb_analys.v&quot; line 12
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Public/FPGA/RISC/tb_analys.v</arg>&quot; Line <arg fmt="%d" index="2">13</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Public/FPGA/RISC_CPU/RAM.v&apos; in file &quot;C:/Users/Public/FPGA/RISC/tb_analys.v&quot; line 13
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Public/FPGA/RISC/tb_analys.v</arg>&quot; Line <arg fmt="%d" index="2">14</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Public/FPGA/RISC_CPU/ROM.v&apos; in file &quot;C:/Users/Public/FPGA/RISC/tb_analys.v&quot; line 14
+</arg>
+</msg>
+
+</messages>
+

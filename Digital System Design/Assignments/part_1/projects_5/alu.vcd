@@ -1,0 +1,81 @@
+$date
+	Sat Nov 30 19:45:43 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module alu_tb $end
+$var wire 8 ! p_y [7:0] $end
+$var reg 8 " p_a [7:0] $end
+$var reg 8 # p_b [7:0] $end
+$var reg 3 $ p_op [2:0] $end
+$var integer 32 % NUM [31:0] $end
+$scope module m_alu $end
+$var wire 8 & a [7:0] $end
+$var wire 8 ' b [7:0] $end
+$var wire 3 ( opcode [2:0] $end
+$var reg 8 ) y [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10100101 )
+b0 (
+b100100 '
+b10000001 &
+b101 %
+b0 $
+b100100 #
+b10000001 "
+b10100101 !
+$end
+#100
+b10100110 !
+b10100110 )
+b1 $
+b1 (
+b1100011 "
+b1100011 &
+b1001 #
+b1001 '
+#200
+b1101 !
+b1101 )
+b10 $
+b10 (
+b10001101 "
+b10001101 &
+b1101 #
+b1101 '
+#300
+b1110111 !
+b1110111 )
+b11 $
+b11 (
+b10010 "
+b10010 &
+b1100101 #
+b1100101 '
+#400
+b11110010 !
+b11110010 )
+b100 $
+b100 (
+b1101 "
+b1101 &
+b1 #
+b1 '
+#500
+bx !
+bx )
+b101 $
+b101 (
+b111101 "
+b111101 &
+b1110110 #
+b1110110 '
+#600
