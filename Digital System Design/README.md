@@ -57,14 +57,14 @@ This folder contains some of my course projects. Folder ***Assigments*** contain
 
       | opcode        | function                 |
       | ------------- | ------------------------ |
-      | `and`         | $a+b+c_{in}$             |
-      | `substract`   | $a+\sim b+c_{in}$        |
-      | `substract_a` | $\sim a+b+\sim c_{in}$   |
-      | `or_ab`       | $\{1’b0,a|b\}$           |
-      | `and_ab`      | $\{1’b0,a\&b\}$          |
-      | `not_ab`      | $\{1’b0,\sim a\&b\}$     |
-      | `exor`        | $\{1’b0,a\land b\}$      |
-      | `exnor`       | $\{1’b0,a\sim \land b\}$ |
+      | `and`         | a+b+c_{in}               |
+      | `substract`   | a+～b+c_{in}          |
+      | `substract_a` | ～a+b+～c_{in}     |
+      | `or_ab`       | {1’b0,a\|b}             |
+      | `and_ab`      | {1’b0,a&b}            |
+      | `not_ab`      | {1’b0,~a&b}       |
+      | `exor`        | {1’b0,a^b}        |
+      | `exnor`       | {1’b0,a~^b}   |
 
     - project2_D: 8-bit shift counter  <img src="README.assets/Screen Shot 2020-10-02 at 11.51.52 AM.png" alt="Screen Shot 2020-10-02 at 11.51.52 AM" style="zoom:33%;" />
 
