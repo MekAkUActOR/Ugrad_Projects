@@ -4,7 +4,7 @@ Some of Course Projects during my Undergraduate years in SJTU
 ***
 - Compiler Principles: C
 - Computer Communication and Network(A): Python
-- Computer Organization and Architecture: Assembly
+- Computer Organization and Architecture: x86 Assembly
 - Course Design on Application Software: Python
 - Data Communications: C/C++
 - Digital System Design: Verilog
