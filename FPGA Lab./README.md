@@ -18,7 +18,7 @@
 
 This folder contains some of my course projects. There are some small excercises like rotary LED, not posting.
 
-- RISC_CPU(Verilog): 16-bit instruction(3-bit opcode, 13-bit operand(address)), 8-bit bus, 8-instruction RISC CPU, able to calculate Fibonacci Sequence.
+- RISC_CPU(Verilog): Multi-Cycle, 16-bit instruction(3-bit opcode, 13-bit operand(address)), 8-bit bus, 8-instruction RISC CPU, able to calculate Fibonacci Sequence.
   - RISC: Project of Xilinx
     - tb_analys.v
     - address_decoder.v
